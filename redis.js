@@ -15,7 +15,7 @@ var client = redis.createClient(RDS_PORT,RDS_HOST,RDS_OPTS);
 
 //测试是否连接上
 client.on('ready',function(err){
-	console.log("ready");
+   console.log("ready");
 });
 
 //Redis的Connection事件之一，在不设置client.options.no_ready_check的情况下，客户端触发connect同时它会发出ready，
